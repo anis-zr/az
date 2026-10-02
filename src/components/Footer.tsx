@@ -25,7 +25,8 @@ export const Footer = () => {
           
           {/* Brand Column */}
           <div className="md:col-span-6 flex flex-col items-start">
-            <BrandLogo size="lg" showTagline />
+            <BrandLogo size="md" showTagline className="sm:hidden" />
+            <BrandLogo size="lg" showTagline className="hidden sm:inline-flex" />
             <p className="mt-4 text-sm text-slate-400 max-w-md leading-relaxed">
               Premium digital solutions studio crafting modern web, mobile, and desktop applications, UI/UX systems, academic research projects, and creative digital media.
             </p>
@@ -90,7 +91,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar: Copyright & Back-to-top */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div className="pt-8 pb-6 sm:pb-0 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>
             © {new Date().getFullYear()} {BRAND.name}. All rights reserved.
           </p>

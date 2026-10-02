@@ -61,7 +61,8 @@ export const Navbar = ({ onNavigate }: NavbarProps) => {
           className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 rounded-xl"
           aria-label="AZ Digital Services — Return to Top"
         >
-          <BrandLogo size="md" showTagline={false} />
+          <BrandLogo size="sm" showTagline={false} className="sm:hidden" />
+          <BrandLogo size="md" showTagline={false} className="hidden sm:inline-flex" />
         </a>
 
         {/* Desktop Navigation Links (Home, Services, Projects, About, Contact) */}

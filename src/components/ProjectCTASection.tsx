@@ -44,7 +44,7 @@ export const ProjectCTASection = () => {
           whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.55, ease: "easeOut" }}
-          className="relative rounded-3xl border border-cyan-500/30 bg-gradient-to-b from-[#0A0F1D]/90 via-[#0a142c]/85 to-[#0A0F1D]/95 backdrop-blur-2xl p-7 sm:p-12 lg:p-14 text-center shadow-[0_20px_60px_-15px_rgba(0,102,255,0.35)] overflow-hidden"
+          className="relative rounded-3xl border border-cyan-500/30 bg-gradient-to-b from-[#0A0F1D]/90 via-[#0a142c]/85 to-[#0A0F1D]/95 backdrop-blur-2xl p-5 sm:p-10 lg:p-14 text-center shadow-[0_20px_60px_-15px_rgba(0,102,255,0.35)] overflow-hidden"
         >
           {/* Subtle cyber grid overlay */}
           <div

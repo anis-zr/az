@@ -58,7 +58,7 @@ export const ServiceCard = ({ service, index }: ServiceCardProps) => {
   return (
     <div
       dir="rtl"
-      className="h-full flex flex-col justify-between rounded-3xl border border-white/[0.08] bg-gradient-to-b from-[#0A0F1D] to-[#070b16] p-6 sm:p-7 relative group overflow-hidden transition-all duration-300 hover:border-cyan-500/40 hover:shadow-[0_15px_40px_-15px_rgba(0,102,255,0.25)] hover:-translate-y-1 text-right"
+      className="h-full flex flex-col justify-between rounded-3xl border border-white/[0.08] bg-gradient-to-b from-[#0A0F1D] to-[#070b16] p-5 sm:p-7 relative group overflow-hidden transition-all duration-300 hover:border-cyan-500/40 hover:shadow-[0_15px_40px_-15px_rgba(0,102,255,0.25)] hover:-translate-y-1 text-right"
     >
       {/* Background ambient lighting per service */}
       <div

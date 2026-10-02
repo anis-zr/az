@@ -51,7 +51,7 @@ export const Services = () => {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`px-4 py-2 rounded-full text-xs sm:text-sm font-arabic font-medium transition-all duration-300 ${
+                className={`min-h-[42px] px-3.5 sm:px-4 py-2.5 sm:py-2 rounded-full text-xs sm:text-sm font-arabic font-medium inline-flex items-center justify-center transition-all duration-300 ${
                   activeCategory === cat.id
                     ? "bg-gradient-to-r from-blue-600 to-cyan-500 text-white shadow-lg shadow-cyan-500/25 border border-cyan-400/40"
                     : "bg-white/[0.04] text-slate-300 hover:text-white hover:bg-white/[0.08] border border-white/[0.08]"

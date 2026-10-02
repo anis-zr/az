@@ -41,7 +41,7 @@ export const FloatingWhatsApp = () => {
         whileHover={shouldReduceMotion ? undefined : { scale: 1.08, y: -2 }}
         whileTap={shouldReduceMotion ? undefined : { scale: 0.94 }}
         transition={{ type: "spring", stiffness: 350, damping: 20 }}
-        className="group relative flex items-center justify-center w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-[0_4px_25px_rgba(16,185,129,0.5)] hover:shadow-[0_6px_35px_rgba(16,185,129,0.75)] border border-emerald-300/40"
+        className="group relative flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-[0_4px_25px_rgba(16,185,129,0.5)] hover:shadow-[0_6px_35px_rgba(16,185,129,0.75)] border border-emerald-300/40"
       >
         {/* Breathing pulse ring */}
         {!shouldReduceMotion && (

@@ -68,7 +68,7 @@ export const WhyAZ = () => {
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.45, delay: idx * 0.08 }}
                 whileHover={shouldReduceMotion ? undefined : { y: -5 }}
-                className="group relative rounded-3xl border border-white/[0.08] bg-[#0A0F1D]/80 backdrop-blur-xl p-7 sm:p-8 transition-all duration-300 hover:border-cyan-400/40 hover:shadow-[0_15px_35px_-10px_rgba(0,102,255,0.25)] flex flex-col justify-between overflow-hidden"
+                className="group relative rounded-3xl border border-white/[0.08] bg-[#0A0F1D]/80 backdrop-blur-xl p-5 sm:p-7 lg:p-8 transition-all duration-300 hover:border-cyan-400/40 hover:shadow-[0_15px_35px_-10px_rgba(0,102,255,0.25)] flex flex-col justify-between overflow-hidden"
               >
                 {/* Accent hover glow */}
                 <div className="absolute -inset-px rounded-3xl bg-gradient-to-br from-cyan-500/15 via-transparent to-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
@@ -77,7 +77,7 @@ export const WhyAZ = () => {
                   {/* Top row with Icon and Emoji */}
                   <div className="flex items-center justify-between mb-6">
                     <div
-                      className="w-13 h-13 sm:w-14 sm:h-14 rounded-2xl border flex items-center justify-center transition-all duration-300 group-hover:scale-110"
+                      className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl border flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                       style={{
                         backgroundColor: `${feature.accentColor}18`,
                         borderColor: `${feature.accentColor}40`,

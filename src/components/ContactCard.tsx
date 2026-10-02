@@ -46,7 +46,7 @@ export const ContactCard = ({
 
   return (
     <div
-      className={`h-full flex flex-col justify-between rounded-3xl p-7 sm:p-10 relative group border transition-all duration-300 hover:-translate-y-1 overflow-hidden ${
+      className={`h-full flex flex-col justify-between rounded-3xl p-5 sm:p-8 lg:p-10 relative group border transition-all duration-300 hover:-translate-y-1 overflow-hidden ${
         isWhatsApp
           ? "border-emerald-500/25 bg-gradient-to-b from-[#0a1815] to-[#0A0F1D] shadow-[0_15px_40px_-15px_rgba(16,185,129,0.25)] hover:border-emerald-400/50"
           : "border-cyan-500/25 bg-gradient-to-b from-[#081525] to-[#0A0F1D] shadow-[0_15px_40px_-15px_rgba(0,102,255,0.25)] hover:border-cyan-400/50"
@@ -140,7 +140,7 @@ export const ContactCard = ({
 
         {/* Response Guarantee info */}
         <div className="flex items-center justify-center gap-2 text-xs text-slate-400">
-          <Clock className="w-3.5 h-3.5 text-cyan-400" />
+          <Clock className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
           <span>
             {isWhatsApp ? "Typical reply time: Within a few minutes" : "File review: Same day response"}
           </span>

@@ -133,7 +133,7 @@ export const Hero = () => {
           {/* ========================================================== */}
           <motion.h1
             variants={itemVariants}
-            className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.12] sm:leading-[1.08] max-w-3xl"
+            className="text-[27px] sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.14] sm:leading-[1.08] max-w-3xl"
           >
             Your Idea. <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500">
@@ -157,15 +157,15 @@ export const Hero = () => {
             className="w-full max-w-xl my-4 sm:my-5 p-3 rounded-2xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.25)]"
           >
             <div className="flex flex-col gap-1.5 text-center">
-              <p className="text-xs sm:text-sm font-medium text-slate-200 flex items-center justify-center gap-2">
-                <span className="inline-block w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" />
+              <p className="text-xs sm:text-sm font-medium text-slate-200 flex items-start justify-center gap-2">
+                <span className="inline-block w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0 mt-1.5" />
                 <span>Envoyez vos fichiers • Demandez un service • Parlons de votre projet</span>
               </p>
               <p
                 dir="rtl"
-                className="text-xs sm:text-sm font-medium text-cyan-300/90 font-arabic flex items-center justify-center gap-2"
+                className="text-xs sm:text-sm font-medium text-cyan-300/90 font-arabic flex items-start justify-center gap-2"
               >
-                <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
+                <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 mt-1.5" />
                 <span>أرسل ملفاتك • اطلب خدمتك • تواصل معنا</span>
               </p>
             </div>
