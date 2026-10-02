@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 6%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 6%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 199 89% 48%;
+    --primary-foreground: 222 47% 4%;
+
+    --secondary: 217 33% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 263 70% 50%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 33% 16%;
+    --input: 217 33% 16%;
+    --ring: 199 89% 48%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[#050811] text-foreground font-sans;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050811;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0284c7;
+}
+
+/* Glassmorphism & Cybernetic Accents */
+.glass-panel {
+  background: rgba(10, 15, 29, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(56, 189, 248, 0.12);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(13, 21, 39, 0.7) 0%, rgba(10, 15, 29, 0.85) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  border-color: rgba(56, 189, 248, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 102, 255, 0.25);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 35px -5px rgba(0, 240, 255, 0.35);
+}
+
+.glow-blue {
+  box-shadow: 0 0 35px -5px rgba(0, 102, 255, 0.4);
+}
+
+.glow-purple {
+  box-shadow: 0 0 35px -5px rgba(139, 92, 246, 0.35);
+}
+
+/* Laser Scanning Line for QR Code */
+.scan-laser {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #00F0FF, #38BDF8, #0066FF, transparent);
+  box-shadow: 0 0 15px 3px rgba(0, 240, 255, 0.8);
+  animation: scan-line 3s ease-in-out infinite;
+}
+
+/* Text Gradients */
+.text-gradient-cyan {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500;
+}
+
+.text-gradient-purple {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-indigo-400;
+}
+
+.text-gradient-silver {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400;
+}
+
+/* Accessibility: Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .scan-laser {
+    animation: none !important;
+    display: none !important;
+  }
+}
